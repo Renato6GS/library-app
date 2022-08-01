@@ -1,0 +1,33 @@
+.table-container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  background-color: var(--white);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+td,
+th {
+  border-bottom: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+tbody tr:hover {
+  background: var(--beige);
+}
+
