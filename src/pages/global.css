@@ -18,12 +18,19 @@ a {
 
 :root {
   --white: #fff6f6;
-  --primary-color: #34c3f0;
+  --primary-color: #413B88;
   --red: #751e52;
-  --gray: #99979d
+  --gray: #99979d;
+  --beige: #F4E7DE;
+  --black: #2B2B2B;
+  --light-black: #7F7C8C;
+  --pink: #F9DFF3;
+  --gray: #AAAAAA;
+  --ligth-gray: #F5F7F9;
+  --light-brown: #C1A792;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Lato Regular';
   src: url("/fonts/Lato-Regular.woff2") format("woff2");
 }
@@ -31,4 +38,4 @@ a {
 @font-face {
   font-family: 'Lato Bold';
   src: url("/fonts/Lato-Bold.woff2") format("woff2");
-} */
+}
