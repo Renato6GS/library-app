@@ -1,16 +1,18 @@
 ---
 import AnnounceSection from "../components/AnnounceSection.astro";
 import Card from "../components/Card.astro";
+import InformationSection from "../components/InformationSection.astro";
 import Layout from "../layouts/Layout.astro";
 import "./global.css"
 ---
 
 <Layout title="Biblioteca OpenSource">
 	<AnnounceSection />
+	<InformationSection />
 	<main>
 		<h2>Libros de programación</h2>
 		<ul>
-			<li>
+			<!-- <li>
 				<Card image="/images/java.png" altImage="Libro de Netbeans" title="Libro de Netbeans" />
 			</li>
 			<li>
@@ -27,7 +29,7 @@ import "./global.css"
 			</li>
 			<li>
 				<Card image="/images/android.png" altImage="Libro de Android" title="Android Tutorial" />
-			</li>
+			</li> -->
 		</ul>
 	</main>
 </Layout>
