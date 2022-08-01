@@ -1,7 +1,8 @@
 ---
 import AnnounceSection from "../components/AnnounceSection.astro";
-import Card from "../components/Card.astro";
+import Form from "../components/Form.astro";
 import InformationSection from "../components/InformationSection.astro";
+import LibrarySection from "../components/LibrarySection.astro";
 import Layout from "../layouts/Layout.astro";
 import "./global.css"
 ---
@@ -10,45 +11,12 @@ import "./global.css"
 	<AnnounceSection />
 	<InformationSection />
 	<main id="libros">
-		<h2>Libros Populares</h2>
-		<ul>
-			<li>
-				<Card image="/images/springboot.jpg" author="Vaadin"
-					altImage="Libro de Springboot: Building Modern Web Apps with Spring Boot and Vaadin" title="Springboot"
-					hrefBook="./books/Building-Modern-Web-Apps-with-Spring-Boot-and-Vaadin.pdf" />
-			</li>
-			<li>
-				<Card image="/images/deep-js.jpg" author="Dr. Axel Rauschmayer" altImage="Libro de JavaScript: Deep JS"
-					title="JavaScript" hrefBook="./books/deep-js-preview-book.pdf" />
-			</li>
-			<li>
-				<Card image="/images/php.jpg" author="GoalKicker.com" altImage="Libro de PHP: PHP Notes For Professionals"
-					title="PHP" hrefBook="./books/PHPNotesForProfessionals.pdf" />
-			</li>
-			<li>
-				<Card image="/images/linux.jpg" author="Mark Mitchell, Jeffrey Oldham, and Alex Samuel"
-					altImage="Libro de Linux: Advanced Linux Programming" title="Linux"
-					hrefBook="./books/advanced-linux-programming.pdf" />
-			</li>
-			<li>
-				<Card image="/images/docker.jpg" author="Elton Stoneman" altImage="Libro de Docker: Docker Succinctly"
-					title="Docker" hrefBook="./books/docker_succinctly.pdf" />
-			</li>
-			<li>
-				<Card image="/images/android.jpg" author="Ryan Hodson"
-					altImage="Libro de Android: Android Programming Succinctly" title="Android"
-					hrefBook="./books/Android_Programming_Succinctly.pdf" />
-			</li>
-			<li>
-				<Card image="/images/rust.jpg" author="Jarrod Overson, Vino Technologies, and contribuitors"
-					altImage="Libro de Rust: From JavaScript to Rust" title="Rust"
-					hrefBook="./books/from-javascript-to-rust.pdf" />
-			</li>
-			<li>
-				<Card image="/images/kotlin.jpg" author="GoalKicker.com" altImage="Libro de Kotlin: From JavaScript to Rust"
-					title="Kotlin" hrefBook="./books/KotlinNotesForProfessionals.pdf" />
-			</li>
-		</ul>
+		<LibrarySection />
+		<Form />
+
+		<section class="table-container">
+
+		</section>
 	</main>
 </Layout>
 
@@ -56,30 +24,8 @@ import "./global.css"
 	main {
 		margin-top: 90px;
 	}
-
-	h2 {
-		width: 100%;
-		max-width: 1220px;
-		margin: 0 auto 50px;
-		font-family: 'Lato Bold', Arial, Helvetica, sans-serif;
-		font-size: 1.6rem;
-	}
-
-	ul {
-		width: 100%;
-		max-width: 1220px;
-		margin: 0 auto;
-		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		grid-gap: 20px;
-	}
-
-	li {
-		padding: 10px 12px;
-		list-style: none;
-		background-color: white;
-		border: var(--gray) 1px solid;
-		border-radius: 3px;
-	}
 </style>
+
+<script hoist>
+	import '../components/handleForm.js';
+</script>

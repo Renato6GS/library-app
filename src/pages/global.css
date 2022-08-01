@@ -28,6 +28,7 @@ a {
   --gray: #AAAAAA;
   --ligth-gray: #F5F7F9;
   --light-brown: #C1A792;
+  --input-background: #F7F7F7;
 }
 
 @font-face {
