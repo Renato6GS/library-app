@@ -5,6 +5,7 @@ import InformationSection from "../components/InformationSection.astro";
 import LibrarySection from "../components/LibrarySection.astro";
 import Layout from "../layouts/Layout.astro";
 import "./global.css"
+import Table from '../components/Table/index.jsx'
 ---
 
 <Layout title="Biblioteca OpenSource">
@@ -14,9 +15,7 @@ import "./global.css"
 		<LibrarySection />
 		<Form />
 
-		<section class="table-container">
-
-		</section>
+		<Table client:visible />
 	</main>
 </Layout>
 
@@ -26,6 +25,6 @@ import "./global.css"
 	}
 </style>
 
-<script hoist>
+<script>
 	import '../components/handleForm.js';
 </script>
